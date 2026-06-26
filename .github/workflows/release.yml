@@ -1,0 +1,31 @@
+name: Release Resume
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "*.pdf"
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Create release tag
+        id: tag
+        run: |
+          TAG="resume-$(git log -1 --format='%cd' --date=format:'%Y%m%d')-$(git rev-parse --short HEAD)"
+          echo "tag=$TAG" >> "$GITHUB_OUTPUT"
+
+      - name: Create GitHub release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.tag.outputs.tag }}
+          name: "Resume ${{ steps.tag.outputs.tag }}"
+          body: |
+            Automated release from commit ${{ github.sha }}.
+          files: "*.pdf"

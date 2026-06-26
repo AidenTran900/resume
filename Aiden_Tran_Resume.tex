@@ -1,0 +1,208 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{graphicx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+\usepackage[sfdefault]{roboto}%
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\newcommand{\qrsize}{0.5in}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\noindent
+\begin{minipage}[c]{0.25\textwidth}
+  \includegraphics[height=\qrsize]{qr-code.jpg}
+\end{minipage}%
+\begin{minipage}[c]{0.50\textwidth}
+  \centering
+  \textbf{\Huge Aiden Tran}\\[2pt]
+  \small \href{mailto:aiden@aidentran.dev}{aiden@aidentran.dev} $|$ (949) 438-0766
+\end{minipage}%
+\begin{minipage}[c]{0.25\textwidth}
+  \raggedleft
+  \small \href{https://aidentran.dev}{aidentran.dev}\\[-1pt]
+  \small \href{https://linkedin.com/in/aidentran900}{linkedin.com/in/aidentran900}\\[-1pt]
+  \small \href{https://github.com/AidenTran900}{github.com/AidenTran900}
+\end{minipage}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of California, Berkeley}{2028 - Berkeley, CA}
+      {BA in Computer Science}{}
+      \resumeItemListStart
+        \resumeItem{\textbf{Relevant Coursework:} Structure/Interpretation of Computer Programs, Data Structures, Discrete Math/Probability Theory, Linear Algebra, Computational Astrophysics }
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{ML Library \& LLM Inference Engine} $|$ \emph{C++, AI/ML, CMake}}{}
+          \resumeItemListStart
+            \resumeItem{Developed a modular C++17 machine learning library from scratch, implementing classical models including SVMs, Linear/Logistic Regression, KNN, and Decision Trees with no external ML frameworks}
+            \resumeItem{Architected a complete LLM transformer inference stack for Llama 3.2-1B, implementing GGUF weight loading, dequantization, KV caching, and multi-head attention entirely from scratch to run autoregressive generation}
+            \resumeItem{Optimized computational throughput by implementing AVX2 SIMD vectorization for matrix-vector products, accelerating the mathematical core for real-time inference}
+            \resumeItem{Implemented manual backpropagation and SMO-based SVM training with kernel caching, reducing algorithmic complexity from O(N\textsuperscript{3}) to O(N\textsuperscript{2}) for large-scale datasets}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Multiplayer Fighting Game} $|$ \emph{Lua, Networking}}{}
+          \resumeItemListStart
+            \resumeItem{Developed a competitive 2D fighting game featuring industry-standard rollback networking capable of re-simulating 12 frames of state per tick, neutralizing 150ms+ of latency for a stutter-free player experience}
+            \resumeItem{Designed a scalable object-oriented architecture to manage a deterministic game loop and 60+ unique states per entity, built on LuaJIT with a React-Lua UI layer}
+            \resumeItem{Shipped to a live player base and accumulated approximately 500k impressions, collecting user feedback and continuously iterating with new features throughout development}
+            \resumeItem{Published a technical writeup on the rollback netcode implementation (\href{https://aidentran.dev/blog/rollback_netcode}{\underline{aidentran.dev/blog/rollback\_netcode}})}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Black Hole Spacetime Analyzer} $|$ \emph{Python, NumPy, Matplotlib, Pandas}}{}
+          \resumeItemListStart
+            \resumeItem{Built a Python simulation modeling particle propagation through curved spacetime near black holes, implementing numerical integration of geodesic paths using the Schwarzschild metric to compute gravitational time dilation and redshift effects}
+            \resumeItem{Integrated the AGN Black Hole Mass Database to run simulations against real supermassive black hole data, validating the model against observed astrophysical parameters}
+            \resumeItem{Developed an interactive parameter system allowing users to adjust mass, radius, and observer frame and observe their impact on spacetime in real time}
+            \resumeItem{Built a 3D visualization engine in Matplotlib rendering spacetime curvature surfaces and geodesic paths, graphically demonstrating event horizon boundaries for infalling objects}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Real-Time Audio Signal Processor} $|$ \emph{C++, ImGui}}{}
+          \resumeItemListStart
+            \resumeItem{Developed a C++ desktop application that captures live audio and analyzes frequencies in real time using a Cooley-Tukey FFT pipeline, including framing, windowing, and peak detection to identify and map fundamental frequencies to musical notes}
+            \resumeItem{Rendered real-time visual feedback including waveform graphs, frequency spectrums, and detected note indicators using ImGui for a responsive and interactive UI}
+            \resumeItem{Supported both real-time microphone input and static audio file analysis, processing imported recordings and returning the correlating musical note for each segment}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Key On Harmony}{Jul. 2024 -- Aug. 2024}
+      {Software Engineering Intern}{}
+      \resumeItemListStart
+        \resumeItem{Developed a secure desktop ingestion client using Electron and React, replacing manual entry with a schema-validated bulk upload system}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C++, Python, Java, C\#, Lua, TypeScript, SQL} \\
+     \textbf{Frameworks/Technologies}{: CMake, React, Node.js, Next.js, PostgreSQL, Unity} \\
+     \textbf{Tools \& Infrastructure}{: Git, Docker, Linux}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
