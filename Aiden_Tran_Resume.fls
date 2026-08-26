@@ -686,6 +686,10 @@ INPUT /home/atran/texmf/fonts/tfm/google/roboto/Roboto-Italic-lf-ot1.tfm
 INPUT /home/atran/texmf/fonts/tfm/google/roboto/Roboto-Italic-lf-ot1.tfm
 INPUT /home/atran/texmf/fonts/tfm/google/roboto/Roboto-Regular-lf-ot1.tfm
 INPUT /home/atran/texmf/fonts/tfm/google/roboto/Roboto-Bold-lf-ot1.tfm
+INPUT ./projects/ml_library.tex
+INPUT projects/ml_library.tex
+INPUT ./projects/ml_library.tex
+INPUT projects/ml_library.tex
 INPUT ./projects/fighting_game.tex
 INPUT projects/fighting_game.tex
 INPUT ./projects/fighting_game.tex
@@ -694,11 +698,6 @@ INPUT ./projects/markov_luau.tex
 INPUT projects/markov_luau.tex
 INPUT ./projects/markov_luau.tex
 INPUT projects/markov_luau.tex
-INPUT ./projects/ml_library.tex
-INPUT projects/ml_library.tex
-INPUT ./projects/ml_library.tex
-INPUT projects/ml_library.tex
-INPUT /home/atran/texmf/fonts/tfm/google/roboto/Roboto-Bold-lf-ot1.tfm
 INPUT ./projects/audio_processor.tex
 INPUT projects/audio_processor.tex
 INPUT ./projects/audio_processor.tex

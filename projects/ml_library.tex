@@ -1,8 +1,8 @@
 \resumeProjectHeading
     {\textbf{ML Library \& LLM Inference Engine} $|$ \emph{C++, AI/ML, CMake}}{\href{https://github.com/AidenTran900/ml-library-cpp}{\underline{GitHub}}}
     \resumeItemListStart
-      \resumeItem{Developed a modular C++17 machine learning library from scratch, implementing classical models including SVMs, Linear/Logistic Regression, KNN, and Decision Trees with no external ML frameworks}
-      \resumeItem{\textbf{Architected a complete LLM transformer inference stack for Llama 3.2-1B}, implementing GGUF weight loading, dequantization, KV caching, and multi-head attention entirely from scratch to run autoregressive generation}
-      \resumeItem{Optimized computational throughput by implementing AVX2 SIMD vectorization for matrix-vector products, accelerating the mathematical core for real-time inference}
-      \resumeItem{Implemented manual backpropagation and SMO-based SVM training with kernel caching, reducing algorithmic complexity from \textbf{O(N\textsuperscript{3}) to O(N\textsuperscript{2})} for large-scale datasets}
+      \resumeItem{Built a C++17 machine learning library from scratch, covering SVM, linear and logistic regression, KNN, decision trees, and random forest, all without an external ML framework, to understand how the algorithms work without relying on black box implementations.}
+      \resumeItem{Implemented a Llama 3.2-1B inference stack: GGUF weight dequantization, tokenization, multi-head attention, and KV caching, then added a CUDA path that runs generation 42x faster than my own CPU only version.}
+      \resumeItem{Wrote AVX2 SIMD vectorization by hand for matrix multiplication, cutting training and inference time by up to 2.5x on large datasets.}
+      \resumeItem{Implemented backpropagation and SMO based SVM training by hand, including a precomputed kernel cache that turns repeated per-pair kernel evaluations into O(1) lookups instead of recomputing them on every SMO iteration.}
     \resumeItemListEnd
