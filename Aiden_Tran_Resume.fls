@@ -690,6 +690,11 @@ INPUT ./projects/ml_library.tex
 INPUT projects/ml_library.tex
 INPUT ./projects/ml_library.tex
 INPUT projects/ml_library.tex
+INPUT /home/atran/texmf/tex/latex/roboto/TS1Roboto-LF.fd
+INPUT /home/atran/texmf/tex/latex/roboto/TS1Roboto-LF.fd
+INPUT /home/atran/texmf/tex/latex/roboto/TS1Roboto-LF.fd
+INPUT /home/atran/texmf/tex/latex/roboto/TS1Roboto-LF.fd
+INPUT /home/atran/texmf/fonts/tfm/google/roboto/Roboto-Regular-lf-ts1.tfm
 INPUT ./projects/fighting_game.tex
 INPUT projects/fighting_game.tex
 INPUT ./projects/fighting_game.tex
@@ -709,6 +714,9 @@ INPUT projects/black_hole.tex
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
 INPUT /home/atran/texmf/fonts/enc/dvips/roboto/rbto_schjax.enc
 INPUT /home/atran/texmf/fonts/enc/dvips/roboto/rbto_h6xohf.enc
+INPUT /home/atran/texmf/fonts/vf/google/roboto/Roboto-Regular-lf-ts1.vf
+INPUT /home/atran/texmf/fonts/tfm/google/roboto/Roboto-Regular-lf-ts1--base.tfm
+INPUT /home/atran/texmf/fonts/enc/dvips/roboto/rbto_ocbbsb.enc
 INPUT Aiden_Tran_Resume.aux
 INPUT ./Aiden_Tran_Resume.out
 INPUT ./Aiden_Tran_Resume.out
