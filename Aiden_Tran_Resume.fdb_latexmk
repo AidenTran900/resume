@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1787790724.66107 "/home/atran/Documents/resume/Aiden_Tran_Resume.tex" "Aiden_Tran_Resume.pdf" "Aiden_Tran_Resume" 1787790725.07259 0
-  "/home/atran/Documents/resume/Aiden_Tran_Resume.tex" 1787790484.58208 5099 c225ebc1ac990493d8291fef20e76b6b ""
+["pdflatex"] 1787857271.33633 "/home/atran/Documents/resume/Aiden_Tran_Resume.tex" "Aiden_Tran_Resume.pdf" "Aiden_Tran_Resume" 1787857271.60535 0
+  "/home/atran/Documents/resume/Aiden_Tran_Resume.tex" 1787857271.17031 5309 0ae850805a27f23d47ed15be51068f3d ""
   "/home/atran/texmf/fonts/enc/dvips/roboto/rbto_h6xohf.enc" 1576067642 2976 14f3c84565dd1bc57c13b9dc0aaeea06 ""
   "/home/atran/texmf/fonts/enc/dvips/roboto/rbto_ocbbsb.enc" 1576067631 3314 42351250ac95a91f488e14b5633f75ce ""
   "/home/atran/texmf/fonts/enc/dvips/roboto/rbto_schjax.enc" 1576067631 2974 729e60f1953f7d28deb744dead16208c ""
@@ -102,9 +102,9 @@
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1764115200 40900 887e0dc8cac988a9e9c574af364cf837 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1781839006.05163 731919 33f3ca839a8da1344839d9706a63334d ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1781838977 6447590 4e9f02c24d8a7219c87fb0662c6f8744 ""
-  "Aiden_Tran_Resume.aux" 1787790725.0099 1065 24bf11977fe8c0d894badfd977c9fa1e "pdflatex"
-  "Aiden_Tran_Resume.out" 1787790725.01058 390 78777251306b8fffe28e9b1870a8b7ec "pdflatex"
-  "Aiden_Tran_Resume.tex" 1787790484.58208 5099 c225ebc1ac990493d8291fef20e76b6b ""
+  "Aiden_Tran_Resume.aux" 1787857271.56744 1065 24bf11977fe8c0d894badfd977c9fa1e "pdflatex"
+  "Aiden_Tran_Resume.out" 1787857271.56744 390 78777251306b8fffe28e9b1870a8b7ec "pdflatex"
+  "Aiden_Tran_Resume.tex" 1787857271.17031 5309 0ae850805a27f23d47ed15be51068f3d ""
   "projects/audio_processor.tex" 1786302800.80072 851 bbd32dc725077d2105e9a9d05906de15 ""
   "projects/black_hole.tex" 1786302804.41772 1057 ba3e82ea5d66025adbbdb3b992502300 ""
   "projects/fighting_game.tex" 1787790574.19365 911 eaccf72c9479bdae9250b40983636963 ""
