@@ -699,10 +699,6 @@ INPUT ./projects/fighting_game.tex
 INPUT projects/fighting_game.tex
 INPUT ./projects/fighting_game.tex
 INPUT projects/fighting_game.tex
-INPUT ./projects/markov_luau.tex
-INPUT projects/markov_luau.tex
-INPUT ./projects/markov_luau.tex
-INPUT projects/markov_luau.tex
 INPUT ./projects/audio_processor.tex
 INPUT projects/audio_processor.tex
 INPUT ./projects/audio_processor.tex
@@ -711,6 +707,10 @@ INPUT ./projects/black_hole.tex
 INPUT projects/black_hole.tex
 INPUT ./projects/black_hole.tex
 INPUT projects/black_hole.tex
+INPUT ./projects/markov_luau.tex
+INPUT projects/markov_luau.tex
+INPUT ./projects/markov_luau.tex
+INPUT projects/markov_luau.tex
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
 INPUT /home/atran/texmf/fonts/enc/dvips/roboto/rbto_schjax.enc
 INPUT /home/atran/texmf/fonts/enc/dvips/roboto/rbto_h6xohf.enc
