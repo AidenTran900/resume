@@ -1,8 +1,10 @@
+% Priority: 1
+
 \resumeProjectHeading
     {\textbf{ML Library \& LLM Inference Engine} $|$ \emph{C++, Machine Learning, LLMs}}{\href{https://github.com/AidenTran900/ml-library-cpp}{\underline{GitHub}}}
     \resumeItemListStart
       \resumeItem{Built a machine learning library from scratch in C++17, with no ML frameworks, implementing 11 model types (classical, neural networks, a transformer) and 6 optimizers to learn how ML works beneath PyTorch}
       \resumeItem{Predicted housing prices and heart disease risk from public Kaggle datasets using the library's regression models}
-      \resumeItem{Proved the library works on a real 1-billion-parameter LLM (Llama 3.2) by running text generation on its own transformer, then sped generation up 42x over the CPU with GPU acceleration}
+      \resumeItem{Ran a real 1B-parameter LLM (Llama 3.2) on the library's own transformer; GPU acceleration is 42x faster than CPU}
       \resumeItem{Cut training and inference time by up to 2.5x on large datasets by vectorizing matrix math with AVX2 SIMD}
     \resumeItemListEnd
