@@ -2,7 +2,7 @@ PWD /home/atran/Documents/resume
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT Aiden_Tran_Resume.tex
+INPUT /home/atran/Documents/resume/Aiden_Tran_Resume.tex
 OUTPUT Aiden_Tran_Resume.log
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
