@@ -1,9 +1,8 @@
 \resumeProjectHeading
-    {\textbf{ML Library \& LLM Inference Engine} $|$ \emph{C++, AI/ML, CMake} $|$ \href{https://github.com/AidenTran900/ml-library-cpp}{\underline{GitHub}}}
+    {\textbf{ML Library \& LLM Inference Engine} $|$ \emph{C++, Machine Learning, LLMs}}{\href{https://github.com/AidenTran900/ml-library-cpp}{\underline{GitHub}}}
     \resumeItemListStart
-      \resumeItem{Built a C++17 machine learning library from scratch, covering SVM, linear and logistic regression, KNN, decision trees, and random forest, all without an external ML framework, to understand how the algorithms work without relying on black box implementations.}
-      \resumeItem{Implemented a Llama 3.2-1B inference stack: GGUF weight dequantization, tokenization, multi-head attention, and KV caching, then added a CUDA path that runs generation 42x faster than my own CPU only version.}
-      \resumeItem{Built linear and logistic regression models using the library to predict housing prices (R²=0.56) and heart disease risk from clinical data.}
-      \resumeItem{Wrote AVX2 SIMD vectorization by hand for matrix multiplication, cutting training and inference time by up to 2.5x on large datasets.}
-      \resumeItem{Implemented backpropagation and SMO based SVM training by hand, including a precomputed kernel cache that turns repeated per-pair kernel evaluations into O(1) lookups instead of recomputing them on every SMO iteration.}
+      \resumeItem{Built a machine learning library from scratch in C++17, with no ML frameworks, implementing 11 model types (classical, neural networks, a transformer) and 6 optimizers to learn how ML works beneath PyTorch}
+      \resumeItem{Predicted housing prices and heart disease risk from public Kaggle datasets using the library's regression models}
+      \resumeItem{Proved the library works on a real 1-billion-parameter LLM (Llama 3.2) by running text generation on its own transformer, then sped generation up 42x over the CPU with GPU acceleration}
+      \resumeItem{Cut training and inference time by up to 2.5x on large datasets by vectorizing matrix math with AVX2 SIMD}
     \resumeItemListEnd
